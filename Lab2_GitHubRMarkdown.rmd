@@ -23,3 +23,12 @@ dune2 <- dune
 #log transform dune
 dune2 <- log1p(dune2)
 ```
+
+
+
+Performing nmds on dune2 and assigning the point element to 'dpoints'.
+```{r nmds_dune2, message = FALSE}
+
+dune2_ndms <- metaMDS(dune2)
+dpoint <- dune2_ndms$point
+```

@@ -13,3 +13,13 @@ Loading the vegan and ape packages.
 library("vegan")
 library("ape")
 ```
+
+
+loading the dune data set and log transforming it.
+```{r dune_dataset}
+data("dune")
+dune2 <- dune
+
+#log transform dune
+dune2 <- log1p(dune2)
+```

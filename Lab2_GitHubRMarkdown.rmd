@@ -32,3 +32,18 @@ Performing nmds on dune2 and assigning the point element to 'dpoints'.
 dune2_ndms <- metaMDS(dune2)
 dpoint <- dune2_ndms$point
 ```
+
+
+
+```{r ggplot_scatterplot , message = FALSE}
+library(ggplot2)
+ggplot(dpoint,aes(x=MDS1, y=MDS2)) + 
+  geom_point() + 
+  theme_bw() + 
+  ggtitle("Scatterplot of MDS: MDS2 vs MDS1")
+
+ggsave("MDS_Scatterplot.pdf")
+```
+
+
+

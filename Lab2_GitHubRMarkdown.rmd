@@ -6,3 +6,10 @@ output: html_document
 ---
 
 # Descriptive Level One Header
+
+
+Loading the vegan and ape packages.
+```{r adding_vegan_ape_packages, warning=FALSE, message = FALSE}
+library("vegan")
+library("ape")
+```

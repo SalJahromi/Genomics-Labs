@@ -5,8 +5,7 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-# Descriptive Level One Header
-
+# Lab2: Dune Data Set MDS Ggplot ScatterPlots
 
 Loading the vegan and ape packages.
 ```{r adding_vegan_ape_packages, warning=FALSE, message = FALSE}
